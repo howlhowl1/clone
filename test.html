@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+img{
+    width: 250px;
+} 
+
+
+#aa{
+    background-color: skyblue;
+    display: inline-block;
+    border: 1px solid black;
+    position: static;
+    /* position: relative; */
+    top: 00px;
+    left: 00px;
+}
+#bb{
+    width: 250px;
+    height: 250px;
+    background-color: antiquewhite;
+    display: inline-block;
+    border: 1px solid black;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+#cc{
+    width: 250px;
+    height: 250px;
+    background-color: lightgreen;
+    display: inline-block;
+    border: 1px solid black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+
+</style>
+
+<body>
+    <div id="aa">
+       <img src="./img/이미지A.jpg">
+    </div>
+<div id="container">
+    <div id="bb">
+        <img src="./img/이미지B.jpg">
+        <div id="cc">
+            <img src="./img/이미지C.jpg" >
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
