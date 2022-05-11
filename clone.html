@@ -210,15 +210,27 @@
 }      
 
 #main-md-slides{
+  /* overflow: hidden; */
   margin: 25px auto 0;
   text-align: center;
   padding: 0 86px;
   display: block;
 }
-#slick-prev-arrow{
+#slick-prev{
   left: 0;
   background-image: url(/img/뒤로버튼.png);
-  background-color: rgb(187, 207, 207);
+  
+}
+#slick-arrow{
+  position: absolute;
+  top: 91px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color:#3A466A;
+  background-repeat: no-repeat;
+  opacity: 0.46;
+  z-index: 10;
 }
 #slick-initialized{
   display: block;
@@ -377,7 +389,7 @@
       <div id="static">
           <h3>New&Best MD</h3>
       <div id="main-md-slides"></div>
-      <button id="slick-prev-arrow"type="button">Previous</button>
+      <button id="slick-prev slick-arrow"type="button">Previous</button>
       <div id="slick-list">
       <div id="slick-track" style="opacity: 1; width:50000px; translate:translate3d(-1048px,0px,px);">
          <div id="slick-slide slick-current" data-slick-index="0"aria-hidden="false" >
