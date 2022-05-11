@@ -219,6 +219,8 @@
   text-align: center;
   padding: 0 86px;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 .slick-slider{
 
@@ -269,7 +271,16 @@
 .main-md-slides{
  
 }
-
+.slides-item{
+  width:232px;
+  height: 232px;
+  border: solid 2px transparent;
+}
+.thumbs-imgs{
+  width: 100%;
+  height: 100%;
+  /* vertical-align: middle; */
+}
 
 </style>
 <body>
@@ -402,7 +413,7 @@
       <div class="slick-track" style="opacity: 1; width:50000px; translate:translate3d(-1048px,0px,px);">
          <div class="slick-slide slick-current" data-slick-index="0"aria-hidden="false" >
          <a href="" target="_blank" class="slides-item"style="width:100%; display:inline-block;">
-         <div id="thumbs-imgs">
+         <div class="thumbs-imgs">
            <img src="img/슬라이드1.jpg" alt="슬라이드1">
          </div>
          <div class="thumbs-cont">
