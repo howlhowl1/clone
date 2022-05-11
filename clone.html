@@ -205,23 +205,30 @@
 }
                                    /* md 영역 */
 
-#main-md{
+.main-md{
   padding-bottom: 100px;
-}      
+}
+.static{
+  width:1190px;
+  margin: auto;
+} 
 
-#main-md-slides{
+.main-md-slides{
   /* overflow: hidden; */
   margin: 25px auto 0;
   text-align: center;
   padding: 0 86px;
   display: block;
 }
-#slick-prev{
+.slick-slider{
+
+}
+.slick-prev{
   left: 0;
   background-image: url(/img/뒤로버튼.png);
   
 }
-#slick-arrow{
+.slick-arrow{
   position: absolute;
   top: 91px;
   width: 46px;
@@ -232,24 +239,26 @@
   opacity: 0.46;
   z-index: 10;
 }
-#slick-initialized{
+.slick-initialized{
   display: block;
 }
 
-#slick-slide{
+.slick-slide{
   float: left;
   height: 100%;
   min-height: 1px;
+  width: 232px;
+  margin-right: 30px;
 }
 
-#slick-list{
+.slick-list{
   display: block;
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 0;
 }
-#slick-track{
+.slick-track{
   display: block;
   position: relative;
   opacity: 1;
@@ -257,9 +266,8 @@
   align-items: center;
   transform: translate3d(-1048px,0px,0px);
 }
-#main-md-slides{
-  width: 232px;
-  margin-right: 30px;
+.main-md-slides{
+ 
 }
 
 
@@ -385,58 +393,58 @@
         </div>
     </section>
     <!--MD-->
-    <section id="main-md">
-      <div id="static">
+    <section class="main-md">
+      <div class="static">
           <h3>New&Best MD</h3>
-      <div id="main-md-slides"></div>
-      <button id="slick-prev slick-arrow"type="button">Previous</button>
-      <div id="slick-list">
-      <div id="slick-track" style="opacity: 1; width:50000px; translate:translate3d(-1048px,0px,px);">
-         <div id="slick-slide slick-current" data-slick-index="0"aria-hidden="false" >
-         <a href="" target="_blank" id="slide-item"style="width:100%; display:inline-block;">
+      <div class="main-md-slides slick-initialized slick-slider"></div>
+      <button class="slick-prev slick-arrow"type="button">Previous</button>
+      <div class="slick-list">
+      <div class="slick-track" style="opacity: 1; width:50000px; translate:translate3d(-1048px,0px,px);">
+         <div class="slick-slide slick-current" data-slick-index="0"aria-hidden="false" >
+         <a href="" target="_blank" class="slides-item"style="width:100%; display:inline-block;">
          <div id="thumbs-imgs">
            <img src="img/슬라이드1.jpg" alt="슬라이드1">
          </div>
-         <div id="thumbs-cont">
+         <div class="thumbs-cont">
             <div id="dt">블루밍 브랜드 드립백(8개입)&모슈x굳세나 텀블러(350ml)선물 세트</div>
             <div id="dd">39.000원</div>
          </div>
           </a>
       </div>
     </div>
-      <div id="slick-slide slick-active" data-slick-index="1"aria-hidden="false">
+      <div class="slick-slide slick-active" data-slick-index="1"aria-hidden="false">
         <div>
-          <a href="" target="_blank" id="slides-item" style="width:100%; display:inline-block;">
+          <a href="" target="_blank" class="slides-item" style="width:100%; display:inline-block;">
             <div class="thumbs-imgs">
               <img src="img/슬라이드2.jpg" alt="슬라이드2">
             </div>
-            <div id="thumbs-cont">
+            <div class="thumbs-cont">
               <div id="dt">시그니처 드립백 커피 & 슬림 스텐컵(300ml) 선물세트</div>
               <div id="dd">29,000원</div>
             </div>
           </a>
         </div>
       </div>
-      <div id="slick-slide slick-active" data-slick-index="2"aria-hidden="false">
+      <div class="slick-slide slick-active" data-slick-index="2"aria-hidden="false">
           <div>
-            <a href="" target="_blank" id="slides-item" style="width:100%; display:inline-block;">
+            <a href="" target="_blank" class="slides-item" style="width:100%; display:inline-block;">
               <div class="thumbs-imgs">
                 <img src="img/슬라이드3.jpg" alt="슬라이드3">
               </div>
-              <div id="thumbs-cont">
+              <div class="thumbs-cont">
                 <div id="dt">원두 커피 티백(16개입)&머그컵(520ml)선물 세트</div>
                 <div id="dd">34,000원</div>
               </div>
             </a>
           </div>
       </div>
-      <div id="slick-slide slick-active" data-slick-index="3"aria-hidden="false">
+      <div class="slick-slide slick-active" data-slick-index="3"aria-hidden="false">
         <div>
-          <a href="" target="_blank" id="slides-item" style="width:100%; display:inline-block;">
+          <a href="" target="_blank" class="slides-item" style="width:100%; display:inline-block;">
             <div class="thumbs-imgs">
               <img src="img/슬라이드4.jpg" alt="슬라이드4">
             </div>
-            <div id="thumbs-cont">
+            <div class="thumbs-cont">
               <div id="dt">에티오피아 디카페인 드립백(8개입)&머그 스텐컵 민트(350ml)선물 세트</div>
               <div id="dd">32,000원</div>
             </div>
