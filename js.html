@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="innerText">이너텍스트</P>
+    <input id="inputvalue" type="text" value="밸류">
+    <button onclick="secret()">아이디체크</button>
+    <div id="styleDisplay">디스플레이스 css</div>
+    <img id="setImg"src="../myfirstproject/img/flex고양이1.jpg" alt="냥이">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <ul id="for"></ul>
+</body>
+</html>
+
+<script>
+    //자체적인 프로그래밍을 할 수 있고,
+    //웹 html을 조작하는 대표적인 언어이다.
+
+    //html안에 텍스트를 가져옴
+   (document.querySelector('innerText'));
+    //html안에 밸류를 가져옴
+   // (document.querySelector('inputValue').Value);
+    //html안에 css를 조작
+    console.log(document.querySelector('styleDisplay'));
+    //html안에 태그의 속성을 조작
+    //(document.querySelector('setImg').setAttribute('',''))
+    //클라이언트 단에서 웹 페이지가 동작하는것을 담당한다
+    
+    //자체적인 프로그래밍을 할수있고,
+
+   // 변수 자료형 제어문 반복문 . .
+   var test = 'qwer';
+   var myArray=['abc','def','hij','kmn'];
+   var  itemArray = document.querySelectorAll('.item')
+   var inputvalue = document.querySelector('#inputvalue').value;
+   
+
+
+   var oldinputvalue
+   =document.querySelector('#inputvalue').value;
+   
+  for(var i=0; i<10; i++){
+      var item = document.createElement('li');
+      item.innerText=i
+      document.querySelector('#for').appendChild(item);
+      //console.log('i값:' +i);
+  }
+
+
+    //클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다
+     function secret(){
+         var inputvalue
+         =document.querySelector('#inputvalue').value;
+         console.log('처음값');
+         console.log(oldinputvalue);
+         console.log('새로운값');
+         console.log(inputvalue);
+             if(inputvalue=='밸류') {
+                alert('밸류라는 아이디는 사용할수 없습니다');
+            } else{
+                alert('정상적인 아이디입니다');
+            }
+     }
+</script>

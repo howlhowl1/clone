@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        background-color:white;
+        width: 1000px;
+        height: 1000px;
+    }
+
+    #cal{
+        position: relative;
+        background-color: rgb(142, 77, 185);
+        display:block;
+        width: 500px;
+        height: 600px;
+    }
+    .btn{
+        width: 100px;
+        height: 50px;
+        font-size: larger;
+    }
+    .number{
+        width: 410px;
+        height: 90px;
+        text-align: right;
+    }
+    .number2{
+        position:relative;
+        padding-right: 3;
+        
+    }
+
+
+</style>
+
+<body>
+    <div id="container">
+    <div id="cal">
+    <input class="number"type="text" id="display">
+    <input class="number"type="text" id="result">
+    <br><br>
+    <button class="btn" onclick="add(1)">1</button>
+    <button class="btn" onclick="add(2)">2</button>
+    <button class="btn" onclick="add(3)">3</button>
+    <button class="btn" onclick="reset()">←</button>
+    <br><br>
+    <button class="btn" onclick="add(4)">4</button>
+    <button class="btn" onclick="add(5)">5</button>
+    <button class="btn" onclick="add(6)">6</button>
+    <button class="btn" onclick="add('+')">+</button>
+    <br><br>
+    <button class="btn" onclick="add(7)">7</button>
+    <button class="btn" onclick="add(8)">8</button>
+    <button class="btn" onclick="add(9)">9</button>
+    <button class="btn"data-type="operator" onclick="add('-')">-</button>
+    <br><br>
+    <button class="btn"data-type="operator" onclick="add('-')">×</button>
+    <button class="btn" onclick="add(0)">0</button>
+    <button class="btn"data-type="operator" onclick="add('÷')">÷</button>
+    <button class="btn" onclick="calculate('=')">=</button>
+    
+    </div>
+</div>
+
+    <!-- <button class="add" onclick="add()">+</button> -->
+    <!-- <button class="result" onclick="result()">=</button> -->
+</body>
+</html>
+<script>
+    function add(char){
+        var display = document.getElementById('display');
+        display.value=display.value+char;
+    }
+    function calculate(){
+        var display = document.getElementById('display');
+        var result = eval(display.value);
+        document.getElementById('result').value = result;
+        
+    }
+    function reset(){
+        document.getElementById('display').value="";
+        document.getElementById('result').value="";
+    }
+    
+    </script>
