@@ -8,7 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <style>
+
+text-decoration : none;
+
 #body{
   height: 17000px;  
   overflow-x: hidden;
@@ -285,7 +289,34 @@
 .thumbs-imgs{
 
 }
+.carousel-item {
+    text-decoration: none;
+    position: relative;
+    display: none;
+    float: none;
+    width: 700px;
+    height: 700px;
+    margin-right: -100%;
+    margin-left: 22%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .5s ease-in-out;
+}
 
+.a{
+    color: black;
+    text-decoration: none;
+}
+.carousel-inner2{
+    position: relative;
+    float: left;
+    margin-right: -100%;
+    /* margin-left: 22%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .5s ease-in-out;
+
+}
 </style>
 <body>
 <div id="wrap"display="block">
@@ -314,13 +345,13 @@
     <div id="container">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active" style="width: 100%;"display="inline-block">
+            <div class="carousel-item active" style="width: 100%;"display="inline-block;" float="left;">
               <img src="img/빙수사진.jpg" width="2000px;" height="700px;" alt="...">
             </div>
-            <div class="carousel-item" style="width: 100%;"display="inline-block">
+            <div class="carousel-item" style="width: 100%;"display="inline-block" float="left;">
               <img src="img/콜드브루사진.jpg" width="2000px;" height="700px;" alt="...">
             </div>
-            <div class="carousel-item" style="width: 100%;"display="inline-block">
+            <div class="carousel-item" style="width: 100%;"display="inline-block" float="left;">
               <img src="img/치즈사진.jpg" width="2000px;" height="700px;" alt="...">
             </div>
           </div>
@@ -409,65 +440,69 @@
     </section>
     <!--MD-->
     <section class="main-md">
-      <div class="static">
-          <h3>New&Best MD</h3>
-      <div class="main-md-slides slick-initialized slick-slider"></div>
-      <button class="slick-prev slick-arrow"type="button">Previous</button>
-      <div class="slick-list">
-      <div class="slick-track" style="opacity: 1; width:50000px; translate:translate3d(-1048px,0px,px);">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/6101636590">
+                <img src="img/슬라이드1.jpg" class="d-block w-35" alt="..." >
+                [카페베네] 블루밍 블렌드 드립백 (8개입) & 모슈x굳세나 텀블러(350ml) 선물 세트</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/6101613037">
+                <img src="img/슬라이드2.jpg" class="d-block  w-35" alt="..."width="50%">
+                [카페베네] 시그니처 드립백 커피 & 슬림 스텐컵(300ml) 선물세트</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/6101642428">
+                <img src="img/슬라이드3.jpg" class="d-block  w-35" alt="..."width="50%">
+                [카페베네] 원두 커피 티백 (16개입) & 머그컵(520ml) 선물 세트</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/6101603011">
+                <img src="img/슬라이드4.jpg" class="d-block  w-35" alt="..."width="80%">
+                [카페베네] 에티오피아 디카페인 드립백 (8개입) & 머그 스텐컵 민트 (350ml) 선물 세트</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/6101625396">
+                <img src="img/슬라이드5.jpg" class="d-block w-35" alt="..."width="80%">
+                [카페베네] 더치커피 콜드브루 2종 & 홈카페 유리컵(7oz) 선물세트</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/6101636590">
+                <img src="img/슬라이드6.jpg" class="d-block  w-35" alt="..."width="80%">
+                [카페베네] 베네캣 산책 텀블러 리유저블컵 (473ml)</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/5746813499">
+                <img src="img/슬라이드7.jpg" class="d-block w-35" alt="..."width="80%">
+                [카페베네] 캡슐 커피 퍼플 블렌드 [8개입] 캡슐커피 네스프레소 머신 호환 가능</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/5700757743">
+                <img src="img/슬라이드8.jpg" class="d-block  w-35" alt="..."width="80%">
+                [카페베네] 베네캣 홈카페 머그 스텐컵 화이트 (360ml)</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/5581931975">
+                <img src="img/슬라이드9.jpg" class="d-block  w-35" alt="..."width="80%">
+                [카페베네] 시그니처 & 에티오피아 디카페인 드립백 커피 [혼합형] [4+4, 8개입]</a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://smartstore.naver.com/caffebenebrandstore/products/5341789494">
+                <img src="img/슬라이드10.jpg" class="d-block  w-35" alt="..."width="80%">
+                [카페베네] 위드베네캣 홈카페 머그컵 L (520ml)</a>
+              </div>
 
-         <div class="slick-slide slick-current" data-slick-index="0"aria-hidden="false" >
-         <a href="" target="_blank" class="slides-item"style="width:100%; display:inline-block;">
-         <div class="thumbs-imgs">
-           <img src="img/슬라이드15.jpg" alt="슬라이드1">
-         </div>
-         <div class="thumbs-cont">
-            <div id="dt">블루밍 브랜드 드립백(8개입)&모슈x굳세나 텀블러(350ml)선물 세트</div>
-            <div id="dd">39.000원</div>
-         </div>
-          </a>
-      </div>
-    </div>
-      <div class="slick-slide slick-active" data-slick-index="1"aria-hidden="false">
-        <div>
-          <a href="" target="_blank" class="slides-item" style="width:100%; display:inline-block;">
-            <div class="thumbs-imgs">
-              <img src="img/슬라이드2.jpg" alt="슬라이드2">
             </div>
-            <div class="thumbs-cont">
-              <div id="dt">시그니처 드립백 커피 & 슬림 스텐컵(300ml) 선물세트</div>
-              <div id="dd">29,000원</div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="slick-slide slick-active" data-slick-index="2"aria-hidden="false">
-          <div>
-            <a href="" target="_blank" class="slides-item" style="width:100%; display:inline-block;">
-              <div class="thumbs-imgs">
-                <img src="img/슬라이드3.jpg" alt="슬라이드3">
-              </div>
-              <div class="thumbs-cont">
-                <div id="dt">원두 커피 티백(16개입)&머그컵(520ml)선물 세트</div>
-                <div id="dd">34,000원</div>
-              </div>
-            </a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-      </div>
-      <div class="slick-slide slick-active" data-slick-index="3"aria-hidden="false">
-        <div>
-          <a href="" target="_blank" class="slides-item" style="width:100%; display:inline-block;">
-            <div class="thumbs-imgs">
-              <img src="img/슬라이드4.jpg" alt="슬라이드4">
-            </div>
-            <div class="thumbs-cont">
-              <div id="dt">에티오피아 디카페인 드립백(8개입)&머그 스텐컵 민트(350ml)선물 세트</div>
-              <div id="dd">32,000원</div>
-            </div>
-          </a>
-        </div>
-    </div>
-      
 
 
 

@@ -24,6 +24,7 @@
     border: none;
     background-color: #f5f5f5;
     border-radius: 10px;
+    text-align: right;
 }
 
 .container {
@@ -98,18 +99,18 @@
             <div onclick="selectNumber(7)">7</div>
             <div onclick="selectNumber(8)">8</div>
             <div onclick="selectNumber(9)">9</div>
-            <div class="oper"><button class="division operator" onclick="division()">/</button></div>
+            <div class="oper"><button class="division operator" onclick="calculator('division')">/</button></div>
             <div onclick="selectNumber(6)">6</div>
             <div onclick="selectNumber(5)">5</div>
             <div onclick="selectNumber(4)">4</div>
-            <div class="oper"><button class="mul operator" onclick="mul()">*</button></div>
+            <div class="oper"><button class="mul operator" onclick="calculator('mul')">*</button></div>
             <div onclick="selectNumber(3)">3</div>
             <div onclick="selectNumber(2)">2</div>
             <div onclick="selectNumber(1)">1</div>
-            <div class="oper"><button class="sub operator" onclick="sub()">-</button></div>
+            <div class="oper"><button class="sub operator" onclick="calculator('sub')">-</button></div>
             <div onclick="selectNumber(0)">0</div>
             <div>.</div>
-            <div class="oper"><button class="add operator" onclick="add()">+</button></div>
+            <div class="oper"><button class="add operator" onclick="calculator('add')">+</button></div>
             
         </div>
     </div>
@@ -144,21 +145,33 @@
     }
 
     // 계산하는 함수
-    // function calculator(oper) {       
-    //     if(ctype == '') {
-    //         ctype = oper;        
-    //     }        
-    //     if(preInputNumber && savedCtype == oper) {
-    //         nextInputNumber = parseInt(inputNumber.value);        
-    //         resultNumber = preInputNumber + nextInputNumber;        
-    //         inputNumber.value = resultNumber;                    
-    //         nextInputNumber = 0;
-    //     } else {
-    //         result();
-    //     }
+    function calculator(oper) {       
+        if(ctype == '') {
+            ctype = oper;        
+        }        
+        if(preInputNumber && savedCtype == oper) {
+            nextInputNumber = parseInt(inputNumber.value);        
+            if(oper == 'add') {
+                resultNumber = preInputNumber + nextInputNumber;        
+            }
+            if(oper == 'sub') {
+                resultNumber = preInputNumber - nextInputNumber;        
+            }
+            if(oper == 'mul') { 
+                resultNumber = preInputNumber * nextInputNumber;        
+            }
+            if(oper == 'division') {
+                resultNumber = preInputNumber / nextInputNumber;        
+            }
+            
+            inputNumber.value = resultNumber;                    
+            nextInputNumber = 0;
+        } else {
+            result();
+        }
 
-    //     preInputNumber = parseInt(inputNumber.value);        
-    // }
+        preInputNumber = parseInt(inputNumber.value);        
+    }
 
     // 결과값 출력
     function result() {         
@@ -194,6 +207,9 @@
         inputNumber.value = 0;
         resultNumber = 0;
         preInputNumber = 0;
+        ctype = '';
+        savedCtype = '';
+
     }
 
     function add() {       
@@ -261,6 +277,14 @@
 
         preInputNumber = parseInt(inputNumber.value);   
     }
+
+  
+
+    
+
+    
+
+
 
     
 

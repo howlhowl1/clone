@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .cl{
+        background-color: aqua;
+    }
+</style>
+
+
+<body>
+    <div id="cl">console.log를 찍어보기위한곳</div>
+<pre> 
+숫자와 문자열 등의 타입들이 서로 다른 타입일 경우
+
+==, !=는 동일한 타입으로 간주하지만, >자료형 변환을 한다
+
+===, !==는 다른 타입으로 간주한다. > 자료형 변환을 하지않는다
+
+console.log(1 == '1'); // true 같은 데이터 타입 간주
+동등 연산자 (==)>>일치할때 true를 반환
+두 피연산자의 자료형을 일치시킨 후, 엄격하게 비교를 수행
+
+
+console.log(1 === '1'); // false 다른 데이터 타입 간주
+일치 연산자 (===) >>일치할때 true를 반환
+자료형 변환 없이 두 피연산자가 엄격히 같은지 판별
+
+
+
+console.log(1 != '1'); // false 같은 데이터 타입 간주
+부등 연산자 (!=) >>>불일치할때 true를 반환
+두 피연산자의 자료형을 일치시킨 후, 엄격하게 비교를 수행
+
+
+console.log(1 !== '1'); // true 다른 데이터 타입 간주
+불일치 연산자 (!==) >>>불일치할때 true를 반환
+자료형 변환 없이 두 피연산자가 엄격히 같은지 판별
+두 피연산자가 같지 않거나, 같은 자료형이 아닐 때 true를 반환
+</pre>
+
+</body>
+
+<script>
+
+var a='보기편하게 선긋기지롱'
+console.log(1 == '1'); // true 같은 데이터 타입 간주
+//==는 자료형변환 o
+console.log(1 === '1'); // false 다른 데이터 타입 간주
+//===는 자료형변환 x
+console.log(1 != '1'); // false 같은 데이터 타입 간주
+//!=는 자료형변환 o
+console.log(1 !== '1'); // true 다른 데이터 타입 간주
+//!==는 자료형변환 x 
+
+
+// 함수 기본구조
+// function 함수명(파라미터) {
+// 	처리내용
+//     return 값;
+// }
+// // 함수 실행
+// 함수명();
+
+// 예시
+function ianFunction(a) {
+	const result = a + 2;
+    return result;
+}
+const ianResult = ianFunction(1);
+console.log(ianResult); // 결과 : 3
+
+
+</script>
+</html>
